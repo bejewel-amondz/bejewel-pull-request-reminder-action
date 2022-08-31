@@ -1,6 +1,12 @@
 name: 'Bejewel Pull Request Reminder'
 description: 'Send slack messages to remind reviewing pull requests.'
 inputs:
+  owner:
+    description: 'owner of github repositories'
+    required: true
+  repos:
+    description: 'target repositories. ex : "abc,def,zxc"'
+    required: true
   webhook-url:
     description: 'Slack Webhook URL'
     required: true
